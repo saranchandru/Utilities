@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "clean-branch": "for /f \"delims=\" %B in ('git branch ^| findstr /v \"master\"') do git branch -D %B"
+  }
+}
